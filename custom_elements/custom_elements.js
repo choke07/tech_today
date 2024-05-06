@@ -1,26 +1,5 @@
 /* custom elements */
 
-    /* tag head */
-    class tag_head extends HTMLElement {
-        constructor() {
-            super();
-        }
-        connectedCallback() {
-            this.innerHTML = `
-            <meta charset="UTF-8">
-            <meta http-equiv="X-UA-Compatible" content="IE=edge">
-            <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <title>Technology Today</title>
-
-            <link rel="stylesheet" href="style.css">
-
-            <!-- Load font awesome icons -->
-            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-            `
-        }
-    }
-    customElements.define('tag-head', tag_head)
-
     /* top navigation bar */
     class topNav extends HTMLElement {
         constructor() {
